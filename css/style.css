@@ -13,8 +13,6 @@ body {
     font-size: 100% ;
     background-image: linear-gradient( to right, #FFFFFF , #fffbf0 );
     
-    
-    
 }
 
 .cabecalho {
@@ -40,7 +38,10 @@ body {
     
 }
 .img-logo{
-    height: 100px;
+    
+    max-width: 60%;
+    margin: auto;
+    display: block;
 }
 
 .cabecalho-menu {
@@ -50,7 +51,7 @@ body {
 .cabecalho-menu-item {
     color: #000000;
     font-weight: 400;
-    font-size: 18px;
+    font-size: max(16px, 1vw);
 }
 
 .cabecalho-menu-item:hover{
@@ -62,6 +63,7 @@ body {
     border-top: 0.4px solid #25b7d3;
     min-height: 100vh;
     flex-grow: 1;
+   
   
 }
 
@@ -70,25 +72,26 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     background: #fff;
     box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.664);
     border-radius: 6px;
-    width: 50%;
-    height: 300px;
+    width: 80%;
+    height: 350px;
     margin: 0 auto;
 
 }
 
-.content h2 {
+.conteudo-principal h2 {
     margin: 20px auto 20px auto;
-    font-size: 35px;
+    font-size: max(22px, 1.7vw);
     margin-bottom: 30px;
     color: #000000;
 }
 
-.content p{
+.conteudo-principal p{
     margin: 20px auto 20px auto;
-    font-size: 18px;
+    font-size: max(14px, 1vw);
 }
 
 .box-input {
@@ -98,10 +101,10 @@ body {
 }
 
 .input-url {
-    padding: 12px 20px;
+    padding: 10px 20px;
     text-align: center;
     outline: transparent;
-    width: 40%;
+    width: 60%;
     border-radius: 5px;
     font-size: 20px;
     color: #000000;
@@ -110,11 +113,11 @@ body {
 
 }
 .btn {
-    padding: 15px 20px;
-    width: 170px;
-    margin-left: 10px;
+    padding: 8px 8px;
+    width: 18%;
+    margin-left: 1%;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: max(14px, 1vw);
     background-color: #25B7D3;
     color: #ffffff;
     cursor: pointer;
