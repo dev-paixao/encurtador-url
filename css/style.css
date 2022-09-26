@@ -50,7 +50,7 @@ body {
     gap: 32px;
 }
 .cabecalho-menu-item {
-    color: #000000;
+    color: #ffffff;
     font-weight: 400;
     font-size: max(16px, 1vw);
 }

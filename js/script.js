@@ -40,6 +40,4 @@ function copiar() {
     inputUrl.setSelectionRange(0, 99999);
 
     navigator.clipboard.writeText(inputUrl.value);
-
-    alert(`URL copiada: ${inputUrl.value}`);
 }
