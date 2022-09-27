@@ -11,7 +11,7 @@ function encurtarUrl() {
     //headers
     let headers = {
         "Content-Type": "application/json",
-        "apiKey": "d7e0ae4f5d834b2b90080076c9712c90" //colocar api key do rebrand.ly
+        "apiKey": "d7e0ae4f5d834b2b90080076c9712c90"
     }
 
     //dados

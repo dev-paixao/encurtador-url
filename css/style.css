@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;0,700;1,300;1,400;1,600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -8,64 +8,67 @@
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
 }
-body {
 
-    font-size: 100% ;
-    background-image: linear-gradient( to right, #FFFFFF , #fffbf0 );
-    
+body {
+    font-size: 100%;
+    background-image: linear-gradient(to right, #FFFFFF, #fffbf0);
 }
 
 .cabecalho {
-
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 24px;
     background-color: #25B7D3;
-
 }
 
 .cabecalho-img {
     max-width: 10%;
-    
 }
 
-.logo{
+.logo {
     margin: 45px auto 45px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
-.img-logo{
-    
+
+.img-logo {
     max-width: 60%;
     margin: auto;
     display: block;
+}
+
+.hamburger-menu {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    cursor: pointer;
+    display: none;
 }
 
 .cabecalho-menu {
     display: flex;
     gap: 32px;
 }
+
 .cabecalho-menu-item {
     color: #ffffff;
     font-weight: 400;
     font-size: max(16px, 1vw);
 }
 
-.cabecalho-menu-item:hover{
+.cabecalho-menu-item:hover {
     opacity: 1;
     text-decoration: underline;
 }
-   
-.conteudo{
+
+.conteudo {
     border-top: 0.4px solid #25b7d3;
     min-height: 100vh;
     flex-grow: 1;
-   
-  
 }
 
 .conteudo-principal {
@@ -80,7 +83,6 @@ body {
     width: 80%;
     height: 350px;
     margin: 0 auto;
-
 }
 
 .conteudo-principal h2 {
@@ -91,7 +93,7 @@ body {
     text-align: center;
 }
 
-.conteudo-principal p{
+.conteudo-principal p {
     margin: 20px auto 20px auto;
     font-size: max(14px, 1vw);
     text-align: center;
@@ -112,9 +114,8 @@ body {
     font-size: max(14px, 1vw);
     color: #000000;
     border: 0.1px solid #16100c;
-
-
 }
+
 .btn {
     padding: 3px 3px;
     width: 20%;
@@ -129,11 +130,9 @@ body {
 .btn:hover {
     background-color: #1aa7c4;
     transition: all .5s;
-
 }
 
 .footerbox {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,7 +142,7 @@ body {
     background-color: #25B7D3;
 }
 
-.copy{
+.copy {
     font-size: max(14px, 1vw);
 }
 
@@ -151,22 +150,57 @@ body {
     display: flex;
     gap: 32px;
 }
+
 .footerbox-menu-item {
     color: #ffffff;
     font-weight: 400;
     font-size: max(14px, 1vw);
 }
 
-.footerbox-menu-item:hover{
+.footerbox-menu-item:hover {
     opacity: 1;
     text-decoration: underline;
 }
 
+.hamburger-menu:focus~.cabecalho-menu {
+    display: flex;
+}
+
 @media (max-width: 440px) {
-    .footer-menu{
+    .footer-menu {
         display: flex;
         flex-direction: column;
-        align-items:center ;
+        align-items: center;
         gap: 10px;
     }
+}
+
+@media (max-width: 630px) {
+    .cabecalho-menu {
+        display: none;
+    }
+
+    .cabecalho-menu,
+    .cabecalho-menu-item {
+        flex-direction: column;
+    }
+
+    .cabecalho-menu-item {
+        margin: 0;
+        height: 0;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cabecalho-img {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
 }
