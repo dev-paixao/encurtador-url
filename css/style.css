@@ -166,14 +166,6 @@ body {
     display: flex;
 }
 
-@media (max-width: 440px) {
-    .footer-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-}
 
 @media (max-width: 630px) {
     .cabecalho-menu {
@@ -203,4 +195,12 @@ body {
         display: flex;
     }
 
+}
+@media (max-width: 440px) {
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
