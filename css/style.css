@@ -20,7 +20,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 24px;
-    background-color: #25B7D3;
+    background-color: #0077B5;
 }
 
 .cabecalho-img {
@@ -66,7 +66,7 @@ body {
 }
 
 .conteudo {
-    border-top: 0.4px solid #25b7d3;
+    border-top: 0.4px solid #0077B5;
     min-height: 100vh;
     flex-grow: 1;
 }
@@ -122,13 +122,13 @@ body {
     margin-left: 1%;
     border-radius: 3px;
     font-size: max(14px, 1vw);
-    background-color: #25B7D3;
+    background-color: #0077B5;
     color: #ffffff;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #1aa7c4;
+    background-color: #0789cf;
     transition: all .5s;
 }
 
@@ -139,7 +139,7 @@ body {
     justify-content: space-around;
     color: #ffffff;
     padding: 20px;
-    background-color: #25B7D3;
+    background-color: #0077B5;
 }
 
 .copy {
