@@ -149,7 +149,10 @@ body {
 }
 
 .copy {
+    display: flex;
+    flex-direction: row;
     font-size: max(14px, 1vw);
+    gap: 10px;
 }
 
 .footer-menu {
@@ -211,3 +214,10 @@ body {
         gap: 10px;
     }
 }
+
+@media (max-width: 300px) {
+    .copy p {
+       display: none;
+    }
+}
+
