@@ -10,7 +10,6 @@
 }
 
 body {
-    font-size: 100%;
     background-image: linear-gradient(to right, #FFFFFF, #fffbf0);
 }
 
@@ -172,6 +171,8 @@ body {
 .hamburger-menu:focus~.cabecalho-menu {
     display: flex;
 }
+
+
 
 
 @media (max-width: 630px) {
