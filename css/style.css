@@ -172,8 +172,7 @@ body {
     display: flex;
 }
 
-
-
+/*responsividade*/
 
 @media (max-width: 630px) {
     .cabecalho-menu {
