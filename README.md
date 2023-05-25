@@ -26,16 +26,23 @@ Este é um encurtador de URL que permite aos usuários encurtar URLs longas em v
 
 Este encurtador de URL pode ser facilmente personalizado para atender às suas necessidades específicas. Você pode ajustar o design, as cores e os elementos da interface usando HTML e CSS. Além disso, se você deseja adicionar recursos adicionais, como estatísticas de cliques ou armazenamento de URLs encurtadas, você pode expandir o código JavaScript fornecido.
 
-## Contribuição
+## Contribuindo
 
 Contribuições são bem-vindas! Se você deseja contribuir para este projeto, siga as etapas abaixo:
 
 1. Faça um fork deste repositório.
-2. Crie uma nova branch com a sua feature: `git checkout -b minha-feature`
-3. Faça as alterações desejadas e salve-as.
-4. Commit suas alterações: `git commit -m 'Adicionando minha feature'`
-5. Faça push para a branch: `git push origin minha-feature`
-6. Envie um pull request.
+
+2. Crie uma nova branch com uma descrição clara da sua alteração: `git checkout -b nome-da-sua-branch`.
+
+3. Faça as alterações desejadas no código.
+
+4. Realize os commits com mensagens descritivas: `git commit -m "Descrição das alterações"`.
+
+5. Envie as alterações para o seu repositório fork: `git push origin nome-da-sua-branch`.
+
+6. Abra um pull request neste repositório, explicando as alterações que foram feitas.
+
+7. Aguarde a revisão e feedback.
 
 ## Licença
 
