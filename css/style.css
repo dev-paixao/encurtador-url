@@ -13,21 +13,6 @@ body {
     background-image: linear-gradient(to right, #FFFFFF, #fffbf0);
 }
 
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px;
-    background-color: #0077B5;
-}
-
-.cabecalho-img {
-    width: max(25px, 2.5vw);
-    filter: invert(1);
-
-}
-
 .logo {
     margin: 45px auto 45px auto;
     display: flex;
@@ -36,7 +21,7 @@ body {
     justify-content: center;
 }
 
-.img-logo {
+.logo-image {
     width: max(30px, 3.5vw);
     transform: rotate(-45deg);
 }
@@ -46,43 +31,19 @@ body {
     color: #000000;
 }
 
-.hamburger-menu {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 36px;
-    cursor: pointer;
-    display: none;
-}
-
-.cabecalho-menu {
-    display: flex;
-    gap: 32px;
-}
-
-.cabecalho-menu-item {
-    color: #ffffff;
-    font-weight: 400px;
-    font-size: max(16px, 1vw);
-}
-
-.cabecalho-menu-item:hover {
-    opacity: 1;
-    text-decoration: underline;
-}
-
-.conteudo {
-    border-top: 0.4px solid #0077B5;
-    min-height: 100vh;
-    flex-grow: 1;
-}
-
-.conteudo-principal {
+.content{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    margin: 12vw;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #fff;
     box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.664);
     border-radius: 6px;
@@ -91,7 +52,7 @@ body {
     margin: 0 auto;
 }
 
-.conteudo-principal h2 {
+.main-content h2 {
     margin: 20px auto 20px auto;
     font-size: max(22px, 1.7vw);
     margin-bottom: 30px;
@@ -99,36 +60,37 @@ body {
     text-align: center;
 }
 
-.conteudo-principal p {
+.main-content p {
     margin: 20px auto 20px auto;
     font-size: max(14px, 1vw);
     text-align: center;
 }
 
-.box-input {
+.input-box {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.input-url {
+.url-input {
     padding: 10px 20px;
     text-align: center;
     outline: transparent;
     width: 50%;
-    border-radius: 3px;
-    font-size: max(14px, 1vw);
+    border-radius: 20px 0 0 20px;
+    font-size: max(14px, 1.3vw);
     color: #000000;
     border: 0.1px solid #16100c;
 }
 
 .btn {
-    padding: 3px 3px;
+    padding: 10px 20px;
     width: 20%;
-    margin-left: 1%;
-    border-radius: 3px;
-    font-size: max(14px, 1vw);
+    border-radius: 0 20px 20px 0;
+    font-size: max(14px, 1.3vw);
     background-color: #0077B5;
+    border: 0.1px solid #0077B5;
     color: #ffffff;
     cursor: pointer;
 }
@@ -137,87 +99,3 @@ body {
     background-color: #0789cf;
     transition: all .5s;
 }
-
-.footerbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    color: #ffffff;
-    padding: 20px;
-    background-color: #0077B5;
-}
-
-.copy {
-    display: flex;
-    flex-direction: row;
-    font-size: max(14px, 1vw);
-    gap: 10px;
-}
-
-.footer-menu {
-    display: flex;
-    gap: 32px;
-}
-
-.footerbox-menu-item {
-    color: #ffffff;
-    font-weight: 400;
-    font-size: max(14px, 1vw);
-}
-
-.footerbox-menu-item:hover {
-    opacity: 1;
-    text-decoration: underline;
-}
-
-.hamburger-menu:focus~.cabecalho-menu {
-    display: flex;
-}
-
-/*responsividade*/
-
-@media (max-width: 630px) {
-    .cabecalho-menu {
-        display: none;
-    }
-
-    .cabecalho-menu,
-    .cabecalho-menu-item {
-        flex-direction: column;
-    }
-
-    .cabecalho-menu-item {
-        margin: 0;
-        height: 0;
-    }
-
-    .cabecalho {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .cabecalho-img {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: flex;
-    }
-
-}
-@media (max-width: 440px) {
-    .footer-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-}
-
-@media (max-width: 300px) {
-    .copy p {
-       display: none;
-    }
-}
-

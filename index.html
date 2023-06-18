@@ -4,53 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="img/icons8-link-64.png">
+    <link rel="shortcut icon" href="img/icons8-link-64.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Encurtador de URL</title>
 </head>
 <body>
-
-    <header class="cabecalho">
-       
-        <img class="cabecalho-img" src="img/icons8-link-64.png" alt="logo Encurtador">
-        <button class="hamburger-menu">&#9776;</button>
-        <nav class="cabecalho-menu" >
-            <a class="cabecalho-menu-item" href="https://dev-paixao.github.io/encurtador-url/" target="_blank">Encurtador</a>
-            <a class="cabecalho-menu-item" href="#">Termos de Serviço</a>
-            <a class="cabecalho-menu-item" href="#">Privacidade</a>
-            <a class="cabecalho-menu-item" href="#">Contato</a>
-        </nav>
-
-    </header>
-    <main class="conteudo">
+    <main class="content">
         <section class="logo">
-         <img class="img-logo" src="img/icons8-link-64.png" alt="Encurtador - Encurtar um link">
-         <h1>ncurtador</h1>
+            <img class="logo-image" src="img/icons8-link-64.png" alt="Encurtador - Encurtar um link">
+            <h1>Encurtador de URL</h1>
         </section>
 
-        <section  class="conteudo-principal">
-            
-                <h2>Cole a URL para ser encurtada</h2>
-            
-                <div class="box-input">
-                    <input class="input-url" id="input-url" type="text" placeholder="Insira a URL">
-                    <button class="btn" onclick="encurtarUrl()">Encurtar</button>
-                    <button class="btn" onclick="copiar()">Copiar</button>
-        
-                </div>
-                <p>Um encurtador de URL que permite encurtar um link de forma simples!</p>    
+        <section class="main-content">
+            <h2>Encurtador de link grátis</h2>
+
+            <div class="input-box">
+                <input class="url-input" id="input-url" type="text" placeholder="Insira a URL" oninput="encurtarUrl()">
+                <button class="btn" onclick="copiar()">Copiar</button>
+            </div>
+
+            <div class="url-encurtada">
+                <h3>Sua URL encurtada</h3>
+            <input class="url-input-encurtada" id="input-url-encurtada" type="text" readonly>
+
+            </div>
+
+            <p>Copie o link encurtado e compartilhe em mensagens, textos, publicações, sites e outros locais.</p>
         </section>
 
     </main>
-    <footer class="footerbox">
-        <nav class="footer-menu" >
-            <a class="footerbox-menu-item" href="#">Termos de Serviço</a>
-            <a class="footerbox-menu-item" href="#">Privacidade</a>
-            <a class="footerbox-menu-item" href="#">Contato</a>
-        </nav>
-        <div class="copy">© 2022 <a class="footerbox-menu-item"href="https://github.com/dev-paixao" target="_blank">dev-paixao</a> <p>- Encurtador de URL</p> </div>
-    </footer>
 
     <script src="js/script.js"></script>
 </body>
 </html>
+
+
