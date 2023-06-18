@@ -99,3 +99,16 @@ body {
     background-color: #0789cf;
     transition: all .5s;
 }
+
+.url-encurtada {
+    margin-top: 20px;
+}
+
+.url-input-encurtada {
+    width: 100%;
+    font-size: max(14px, 1.3vw);
+}
+
+.url-input-encurtada:focus {
+    outline: none;
+}
